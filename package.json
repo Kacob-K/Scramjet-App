@@ -8,7 +8,7 @@
 		"node": ">=16.0.0"
 	},
 	"scripts": {
-		"build": "echo 'No build step required'",
+		"build": "rm -rf dist/angular && mkdir -p dist/angular && cp -R public/. dist/angular/",
 		"start": "corepack pnpm install && node src/index.js",
 		"format": "prettier --write .",
 		"lint": "eslint ./src/",
