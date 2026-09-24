@@ -9,7 +9,7 @@
 	},
 	"scripts": {
 		"build": "echo 'No build step required'",
-		"start": "node src/index.js",
+		"start": "corepack pnpm install && node src/index.js",
 		"format": "prettier --write .",
 		"lint": "eslint ./src/",
 		"lint:fix": "eslint ./src/ --fix"
