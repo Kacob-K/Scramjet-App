@@ -6,7 +6,7 @@ name: Build and deploy Node.js app to Azure Web App - Scramjet
 on:
   push:
     branches:
-      - copilot/fix-deploy-github-actions-job
+      - 'copilot/fix-deploy-github-actions-job'
   workflow_dispatch:
 
 jobs:
@@ -51,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_637B96A7AFA24CE88ADA3B0867B533E3 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_1EE126591FD94225A2587ACB8B014427 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_96305074CC474566A8E7217E35E165C2 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_88AB6E9B822246518B273EF11071549B }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_48FFC6ED13C44ECC82329AAAA8D18AE3 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_BAE515F053DF4AEB99DA5BDCE5922513 }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
