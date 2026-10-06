@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - Scramjet
+name: Build and deploy Node.js app to Azure Web App - scramjet
 
 on:
   push:
@@ -51,15 +51,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_88AB6E9B822246518B273EF11071549B }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_48FFC6ED13C44ECC82329AAAA8D18AE3 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_BAE515F053DF4AEB99DA5BDCE5922513 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_3F9F9B4FFCB54346B8C5CA259E1AEC1C }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_4B1EE471CEDF45109A4CFE76724FC382 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2548B82B2CC44AB4AB98538B456BB271 }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'Scramjet'
+          app-name: 'scramjet'
           slot-name: 'Production'
           package: .
           
