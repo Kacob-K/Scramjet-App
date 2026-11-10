@@ -11,7 +11,9 @@
 		"start": "node src/index.js",
 		"format": "prettier --write .",
 		"lint": "eslint ./src/",
-		"lint:fix": "eslint ./src/ --fix"
+		"lint:fix": "eslint ./src/ --fix",
+		"build:netlify": "node scripts/build-netlify.js",
+		"build:web": "node scripts/build-netlify.js"
 	},
 	"keywords": [
 		"proxy"
